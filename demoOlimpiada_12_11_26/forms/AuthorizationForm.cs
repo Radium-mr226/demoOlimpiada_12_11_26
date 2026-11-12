@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using demoOlimpiada_12_11_26.Models;
 
 namespace demoOlimpiada_12_11_26.forms
 {
@@ -71,7 +72,7 @@ namespace demoOlimpiada_12_11_26.forms
                 };
                 Program.context.contracts.Add(order);
                 Program.context.SaveChanges();   // после этого у order появляется id_contract
-
+        
                 var tarif = Program.context.tarif.First(t => t.id_tarif == _item.tarifId);
 
                 var values = new Dictionary<string, string>

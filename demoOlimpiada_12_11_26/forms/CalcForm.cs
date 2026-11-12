@@ -163,9 +163,9 @@ namespace demoOlimpiada_12_11_26.forms
         {
             if (CompareStorage.Items.Count > 1)
             {
-                CompareForm compareForm = new CompareForm();
-                compareForm.ShowDialog();
-            }
+            CompareForm compareForm = new CompareForm();
+            compareForm.ShowDialog();
+        }
             else
             {
                 var auth = new AuthorizationForm(BuildItems());
